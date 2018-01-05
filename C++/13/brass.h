@@ -10,7 +10,7 @@ private:
 	long acctNum;
 	double balance;
 public:
-	Brass(const std::string & s = "Nullbody", long an = -1
+	Brass(const std::string & s = "Nullbody", long an = -1,
 			double bal = 0.0);
 	void Deposit(double amt);
 	virtual void Withdraw(double amt);
@@ -20,7 +20,7 @@ public:
 };
 
 //Brass Plus Account Class
-class BrasPlus : public Brass
+class BrassPlus : public Brass
 {
 private:
 	double maxLoan;
@@ -34,9 +34,9 @@ public:
 	virtual void Withdraw(double amt);
 	void ResetMax(double m) { maxLoan = m;};
 	void ResetRate(double r) { rate = r;};
-	void ResetOwes() { owesBank = 0;} 
+	void ResetOwe() { oweBank = 0;} 
 
 
-}
+};
 
 #endif
