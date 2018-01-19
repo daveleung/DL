@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
-#include "stcktp1.h"
+#include "stacktp1.h"
 const int Num = 10;
 int main()
 {
@@ -19,7 +19,7 @@ int main()
 		" 5: Joy Almondo", " 6: Portia Koop",
 		" 7: Wolfgan Kibble", " 8: Xaverie Paprika",
 		" 9: Juan Moore", " 10: Misha Mache"
-	}
+	};
 	//out basket
 	const char * out[Num];
 

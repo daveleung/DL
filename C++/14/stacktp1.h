@@ -10,7 +10,7 @@ private:
 	Type *items;
 	int top;
 public:
-	explicit Stack(int ss = SIZE);
+	explicit Stack(int ss = 10);
 	Stack(const Stack & st);
 	~Stack() { delete [] items;}
 	bool isempty() {return top == 0;}
